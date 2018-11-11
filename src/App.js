@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 
-// display value in the begining
-// index = binSearch(value)
-// print index and :tada:
-// print sad face when does not exists
-
 const makeListComponent = Cell =>
   class List extends Component {
     static propTypes = {
@@ -126,7 +121,7 @@ class App extends Component {
             onChange={this.handleValueChange}
           />
           <h2>
-            What's the index of <code>{value}</code>?
+            What is the index of <code>{value}</code>?
           </h2>
         </header>
         <section>
